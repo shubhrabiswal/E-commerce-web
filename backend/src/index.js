@@ -15,29 +15,12 @@ app.get("/", (req, res) =>{
         res.send('working');
         console.log("Working.....");
 })
-// require("dotenv").config();
+require("dotenv").config();
 //environment variable or you can say constants
 env.config();
 
-// mongodb connection
-//mongodb+srv://root:<password>@cluster0.8pl1w.mongodb.net/<dbname>?retryWrites=true&w=majority
-// const connection_string = process.env.CONNECTION_STRING;
-
-// mongoose.connect(process.env.CONNECTION_STRING,{
-//         useNewUrlParser: true, 
-//         useUnifiedTopology: true,
-//         useCreateIndex: true
-//     }
-// ).then(() => {
-//     console.log('Database connected');
-// });
-
-
-//extra
-// mongodb+srv://shubhra08:<password>@cluster0.kit9h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-// mongoose
-  // .connect( ${process.env.CONNECTION_STR},
-mongoose.connect(`mongodb+srv://shubhra08:shubhra08@cluster0.56ii0.mongodb.net/todo?retryWrites=true&w=majority`,
+mongoose.connect( 
+        ${process.env.CONNECTION_STR},
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
