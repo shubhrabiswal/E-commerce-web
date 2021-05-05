@@ -33,8 +33,6 @@ mongoose.connect(
   });
 //
 
-// d9GN3Cjhaygt6nvf
-// mongodb+srv://shubhra08:d9GN3Cjhaygt6nvf@cluster0.uq7xx.mongodb.net/ecommerce?retryWrites=true&w=majority
 app.use(express.json());
 // app.use('/api', authRoutes);
 // app.use('/api', adminRoutes);
